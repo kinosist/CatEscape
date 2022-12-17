@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public AudioClip shoutSE;   // Audio—p
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +29,7 @@ public class PlayerController : MonoBehaviour
     // –î‚ª“–‚½‚Á‚½‚ÌAudio(ArrowController‚©‚çŒÄ‚Ño‚µ)
     public void Shout()
     {
-        AudioSource.PlayClipAtPoint(shoutSE, transform.position);
+        //AudioSource.PlayClipAtPoint(shoutSE, transform.position);
+        GetComponent<AudioSource>().Play();
     }
 }

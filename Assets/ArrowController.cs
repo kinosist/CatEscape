@@ -40,7 +40,7 @@ public class ArrowController : MonoBehaviour
             GameObject manager = GameObject.Find("GameManager");
             manager.GetComponent<GameManager>().DecreaseHP();
             Destroy(gameObject);    // –îˆó‚ğÁ‚·
-            this.player.GetComponent<PlayerController>().Shout();
+            this.player.GetComponent<PlayerController>().Shout();   // ƒvƒŒƒCƒ„[‚ªâ‹©
         }
     
         
